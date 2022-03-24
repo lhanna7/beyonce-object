@@ -27,54 +27,96 @@ const beyonceHash = {
 
 // 1. Print all the songs
 function printAllSongs() {
+    // const allSongs = beyonceHash.hits.forEach(hit => console.log(hit))
 }
+printAllSongs()
 
 // 2. Print all the movies
 function printAllMovies() {
+  // const allMovies = beyonceHash.movies.forEach(movie => console.log(movie))
 }
+printAllMovies()
 
 // 3. Return an array of all Beyonce's hit song titles
 function hitSongTitles() {
+//   return beyonceHash.hits.map(hit => hit.title)
 }
+// console.log(hitSongTitles())
+
+hitSongTitles()
 
 // 4. Return an array of all Beyonce's fierceness ratings
 function allFiercenessRatings() {
+  // const fierce = beyonceHash.hits.map(function(hit) {
+  //   return hit.fierceness;
+  // })
+  // console.log(fierce)
 }
+allFiercenessRatings()
 
 // 5. Return all the songs where Beyonce is wearing a bodysuit or a bodysuit is part of the video theme
 function songsWithBodySuits() {
-}
+  // const bodySuit = beyonceHash.hits.filter(hit => 
+  //   hit.signature_look.includes("bodysuit") ||
+  //   hit.video_theme.includes("bodysuit"))
+  //   console.log(bodySuit)
+  }
+  
+songsWithBodySuits()
 
 // 6. Return an array with all of the songs where Beyonce's fierceness is greater than or equal to a given number
 function getSongsByFiercenessGTE() {
-}
+  // return beyonceHash.hits.filter(hit => hit.fierceness >= 9)
+  }
+  // console.log(getSongsByFiercenessGTE())
 
-// 7. Return an array with all of the movies Beyonce made after or during a given year
+getSongsByFiercenessGTE()
+
+// // 7. Return an array with all of the movies Beyonce made after or during a given year
 function getMoviesByDateGTE() {
-}
+  // return beyonceHash.movies.filter(movie => movie.year <= 2006)
+  }
+  // console.log(getMoviesByDateGTE())
+
 
 // 8. Return all hit songs where Beyonce was in a group
 function groupHits() {
+  //  return beyonceHash.hits.filter(hit => hit.group === true)
 }
+  // console.log(groupHits())
+
 
 // 9. Return a hit song where Beyonce's hair is blonde
 function findBlondeHit() {
+  // return beyonceHash.hits.find(hit => hit.hair.includes('blonde'))
 }
+  // console.log(findBlondeHit())  
 
 // 10. Return the hit song "Sorry"
 function sorry() {
+  // const song = beyonceHash.hits.find(hit => {
+  //   return hit.title === 'Sorry'
+  // })
+  // console.log(song)
 }
 
 // 11. Return a given song
 function getSong() {
+  // const anotherSong = beyonceHash.hits.find(hit => {
+  //   return hit.title === 'Feeling Myself'
+  // })
+  // console.log(anotherSong)
 }
 
 // 12. Return all hit songs where Beyonce's fierceness rating is 10
 function fiercestHits() {
+  // return beyonceHash.hits.filter(hit => hit.fierceness === 10)
 }
+  // console.log(fiercestHits())
 
 // 13. Return the sum of Beyonce's fierceness value for all of her hit songs
 function hitFiercenessSum() {
+
 }
 
 // 14. Return the average fierceness value for all Beyonce's hit songs
