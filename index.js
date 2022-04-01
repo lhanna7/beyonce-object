@@ -33,13 +33,13 @@ const beyonceHash = {
 
 // 1. Print all the songs
 function printAllSongs() {
-  const allSongs = beyonceHash.hits.forEach(hit => console.log(hit))
+  return beyonceHash.hits.forEach(hit => console.log(hit))
 }
 printAllSongs()
 
 // 2. Print all the movies
 function printAllMovies() {
-  const allMovies = beyonceHash.movies.forEach(movie => console.log(movie))
+  return beyonceHash.movies.forEach(movie => console.log(movie))
 }
 printAllMovies()
 
@@ -62,13 +62,11 @@ allFiercenessRatings()
 
 // 5. Return all the songs where Beyonce is wearing a bodysuit or a bodysuit is part of the video theme
 function songsWithBodySuits() {
-  const bodySuit = beyonceHash.hits.filter(hit =>
-    hit.signature_look.includes("bodysuit") ||
-    hit.video_theme.includes("bodysuit"))
-  console.log(bodySuit)
+  return beyonceHash.hits.filter(hit => {
+    return hit.signature_look.includes('bodysuit') || hit.video_theme.includes('bodysuit')
+  })
 }
-
-songsWithBodySuits()
+console.log(songsWithBodySuits())
 
 // 6. Return an array with all of the songs where Beyonce's fierceness is greater than or equal to a given number
 function getSongsByFiercenessGTE() {
@@ -100,19 +98,15 @@ console.log(findBlondeHit())
 
 // 10. Return the hit song "Sorry"
 function sorry() {
-  const song = beyonceHash.hits.find(hit => {
-    return hit.title === 'Sorry'
-  })
-  console.log(song)
+  return beyonceHash.hits.find(hit => hit.title === 'Sorry')
 }
+console.log(sorry())
 
 // 11. Return a given song
 function getSong() {
-  const anotherSong = beyonceHash.hits.find(hit => {
-    return hit.title === 'Feeling Myself'
-  })
-  console.log(anotherSong)
+  return beyonceHash.hits.find(hit => hit.title === 'Single Ladies')
 }
+console.log(getSong())
 
 // 12. Return all hit songs where Beyonce's fierceness rating is 10
 function fiercestHits() {
